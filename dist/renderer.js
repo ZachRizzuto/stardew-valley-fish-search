@@ -1,3 +1,4 @@
+"use strict";
 /**
  * This file will automatically be loaded by webpack and run in the "renderer" context.
  * To learn more about the differences between the "main" and the "renderer" context in
@@ -25,6 +26,7 @@
  *  });
  * ```
  */
-
-import "./index.css";
-import "../main";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./index.css");
+require("./main");
+//# sourceMappingURL=renderer.js.map

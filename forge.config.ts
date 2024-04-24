@@ -26,6 +26,8 @@ const config: ForgeConfig = {
     new AutoUnpackNativesPlugin({}),
     new WebpackPlugin({
       mainConfig,
+      devContentSecurityPolicy:
+        "connect-src 'self' http://3.129.92.167:3001/fish unsafe-eval",
       renderer: {
         config: rendererConfig,
         entryPoints: [

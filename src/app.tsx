@@ -1,26 +1,73 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Requests } from "../requests";
+import { Topbar } from "./Components/Topbar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFish } from "@fortawesome/free-solid-svg-icons";
+import { dataAllFish } from "../data.fish";
+import { Fish } from "./Components/Fish";
+import { TFish } from "./types";
+
+const sampleFish = [
+  {
+    name: "Albacore",
+  },
+  {
+    name: "Bass",
+  },
+  {
+    name: "Smallmouth Bass",
+  },
+];
 
 export const App = () => {
-  const [number, setNumber] = useState(0);
+  const [allFish, setAllFish] = useState<TFish[]>([]);
+  const [topbarExtended, setTopbarExtended] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+    // setIsLoading(true);
+    // Requests.getFish()
+    //   .then((fish) => {
+    //     fish ? setAllFish(fish) : setAllFish(sampleFish);
+    //   })
+    //   .then(() => setIsLoading(false));
+    setAllFish(dataAllFish);
+  }, []);
+
   return (
     <>
-      <div className="container">
-        <div
-          style={{
-            fontSize: "500%",
-          }}
-        >
-          {number}
-        </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "10px",
-          }}
-        >
-          <button onClick={() => setNumber(number + 1)}>Incremement</button>
-          <button onClick={() => setNumber(number - 1)}>Decrement</button>
+      <div className="background-img-wrapper"></div>
+      <Topbar
+        isExtended={topbarExtended}
+        setOpenStatus={{
+          setExtended: (topbarExtended) =>
+            topbarExtended ? setTopbarExtended(false) : setTopbarExtended(true),
+        }}
+      />
+      <div className="page-container">
+        <div className="fish-container">
+          {isLoading ? (
+            <div className="loading">
+              <FontAwesomeIcon icon={faFish} />
+            </div>
+          ) : (
+            ""
+          )}
+          {allFish.map((fish: TFish) => (
+            <Fish
+              name={fish.name}
+              location={fish.location}
+              imageUrl={fish.imageUrl}
+              sellPrice={[]}
+              time={fish.time}
+              description={fish.description}
+              season={fish.season}
+              difficulty={fish.difficulty}
+              weather={fish.weather}
+              usedIn={fish?.usedIn}
+              key={fish.id}
+            />
+          ))}
         </div>
       </div>
     </>
