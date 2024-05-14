@@ -1,23 +1,10 @@
 import { useEffect, useState } from "react";
-import { Requests } from "../requests";
 import { Topbar } from "./Components/Topbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFish } from "@fortawesome/free-solid-svg-icons";
 import { dataAllFish } from "../data.fish";
 import { Fish } from "./Components/Fish";
 import { TFish } from "./types";
-
-const sampleFish = [
-  {
-    name: "Albacore",
-  },
-  {
-    name: "Bass",
-  },
-  {
-    name: "Smallmouth Bass",
-  },
-];
 
 export const App = () => {
   const [allFish, setAllFish] = useState<TFish[]>([]);
@@ -43,6 +30,8 @@ export const App = () => {
           setExtended: (topbarExtended) =>
             topbarExtended ? setTopbarExtended(false) : setTopbarExtended(true),
         }}
+        allFish={allFish}
+        setAllFish={(fish) => setAllFish(fish)}
       />
       <div className="page-container">
         <div className="fish-container">
