@@ -47,7 +47,7 @@ export const App = () => {
               name={fish.name}
               location={fish.location}
               imageUrl={fish.imageUrl}
-              sellPrice={[]}
+              sellPrice={fish.sellPrice}
               time={fish.time}
               description={fish.description}
               season={fish.season}
