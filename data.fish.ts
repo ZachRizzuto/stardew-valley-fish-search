@@ -76,7 +76,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 4,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/8/82/Bream.png",
     name: "Bream",
     description: "",
     sellPrice: [[], [], []],
@@ -89,7 +89,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 5,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/1/11/Largemouth_Bass.png",
     name: "Largemouth Bass",
     description: "",
     sellPrice: [[], [], []],
@@ -102,7 +103,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 6,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/a/a5/Smallmouth_Bass.png",
     name: "Smallmouth Bass",
     description: "",
     sellPrice: [[], [], []],
@@ -115,7 +117,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 7,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/1/14/Rainbow_Trout.png",
     name: "Rainbow Trout",
     description: "",
     sellPrice: [[], [], []],
@@ -128,7 +131,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 8,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/e/e0/Salmon.png",
     name: "Salmon",
     description: "",
     sellPrice: [[], [], []],
@@ -141,7 +144,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 9,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/0/05/Walleye.png",
     name: "Walleye",
     description: "",
     sellPrice: [[], [], []],
@@ -154,7 +157,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 10,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/4/43/Perch.png",
     name: "Perch",
     description: "",
     sellPrice: [[], [], []],
@@ -167,7 +170,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 11,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/a/a8/Carp.png",
     name: "Carp",
     description: "",
     sellPrice: [[], [], []],
@@ -180,7 +183,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 12,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/9/99/Catfish.png",
     name: "Catfish",
     description: "",
     sellPrice: [[], [], []],
@@ -193,7 +196,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 13,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/3/31/Pike.png",
     name: "Pike",
     description: "",
     sellPrice: [[], [], []],
@@ -206,7 +209,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 14,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/5/56/Sunfish.png",
     name: "Sunfish",
     description: "",
     sellPrice: [[], [], []],
@@ -219,7 +222,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 15,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/f/f2/Red_Mullet.png",
     name: "Red Mullet",
     description: "",
     sellPrice: [[], [], []],
@@ -232,7 +236,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 16,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/f/f1/Herring.png",
     name: "Herring",
     description: "",
     sellPrice: [[], [], []],
@@ -245,7 +249,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 17,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/9/91/Eel.png",
     name: "Eel",
     description: "",
     sellPrice: [[], [], []],
@@ -258,7 +262,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 18,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/5/5a/Octopus.png",
     name: "Octopus",
     description: "",
     sellPrice: [[], [], []],
@@ -271,7 +275,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 19,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/d/d3/Red_Snapper.png",
     name: "Red Snapper",
     description: "",
     sellPrice: [[], [], []],
@@ -284,7 +289,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 20,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/8/81/Squid.png",
     name: "Squid",
     description: "",
     sellPrice: [[], [], []],
@@ -297,7 +302,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 21,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/a/a9/Sea_Cucumber.png",
     name: "Sea Cucumber",
     description: "",
     sellPrice: [[], [], []],
@@ -310,7 +316,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 22,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/d/d5/Super_Cucumber.png",
     name: "Super Cucumber",
     description: "",
     sellPrice: [[], [], []],
@@ -323,7 +330,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 23,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/7/72/Ghostfish.png",
     name: "Ghostfish",
     description: "",
     sellPrice: [[], [], []],
@@ -336,7 +344,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 24,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/0/03/Stonefish.png",
     name: "Stonefish",
     description: "",
     sellPrice: [[], [], []],
@@ -349,7 +358,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 25,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/6/63/Ice_Pip.png",
     name: "Ice Pip",
     description: "",
     sellPrice: [[], [], []],
@@ -362,7 +371,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 26,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/1/12/Lava_Eel.png",
     name: "Lava Eel",
     description: "",
     sellPrice: [[], [], []],
@@ -375,7 +385,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 27,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/b/bb/Sandfish.png",
     name: "Sandfish",
     description: "",
     sellPrice: [[], [], []],
@@ -388,7 +399,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 28,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/7/76/Scorpion_Carp.png",
     name: "Scorpion Carp",
     description: "",
     sellPrice: [[], [], []],
@@ -401,7 +413,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 29,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/8/85/Flounder.png",
     name: "Flounder",
     description: "",
     sellPrice: [[], [], []],
@@ -414,7 +427,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 30,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/3/33/Midnight_Carp.png",
     name: "Midnight Carp",
     description: "",
     sellPrice: [[], [], []],
@@ -427,7 +441,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 31,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/4/42/Sturgeon.png",
     name: "Sturgeon",
     description: "",
     sellPrice: [[], [], []],
@@ -440,7 +455,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 32,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/0/01/Tiger_Trout.png",
     name: "Tiger Trout",
     description: "",
     sellPrice: [[], [], []],
@@ -453,7 +469,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 33,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/d/db/Bullhead.png",
     name: "Bullhead",
     description: "",
     sellPrice: [[], [], []],
@@ -466,7 +483,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 34,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/7/73/Tilapia.png",
     name: "Tilapia",
     description: "",
     sellPrice: [[], [], []],
@@ -479,7 +496,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 35,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/b/bd/Chub.png",
     name: "Chub",
     description: "",
     sellPrice: [[], [], []],
@@ -492,7 +509,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 36,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/1/18/Dorado.png",
     name: "Dorado",
     description: "",
     sellPrice: [[], [], []],
@@ -505,7 +522,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 37,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/e/e1/Albacore.png",
     name: "Albacore",
     description: "",
     sellPrice: [[], [], []],
@@ -518,7 +536,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 38,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/e/ef/Shad.png",
     name: "Shad",
     description: "",
     sellPrice: [[], [], []],
@@ -531,7 +549,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 39,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/8/87/Lingcod.png",
     name: "Lingcod",
     description: "",
     sellPrice: [[], [], []],
@@ -544,7 +562,7 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 40,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/0/02/Halibut.png",
     name: "Halibut",
     description: "",
     sellPrice: [[], [], []],
@@ -557,7 +575,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 41,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/a/ad/Void_Salmon.png",
     name: "Void Salmon",
     description: "",
     sellPrice: [[], [], []],
@@ -570,7 +589,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 42,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/3/34/Slimejack.png",
     name: "Slimejack",
     description: "",
     sellPrice: [[], [], []],
@@ -583,7 +603,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 43,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/3/3a/Stingray.png",
     name: "Stingray",
     description: "",
     sellPrice: [[], [], []],
@@ -596,7 +617,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 44,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/b/bb/Lionfish.png",
     name: "Lionfish",
     description: "",
     sellPrice: [[], [], []],
@@ -609,7 +631,8 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 45,
-    imageUrl: "",
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/e/ee/Blue_Discus.png",
     name: "Blue Discus",
     description: "",
     sellPrice: [[], [], []],
@@ -622,8 +645,22 @@ export const dataAllFish: TFish[] = [
   },
   {
     id: 46,
-    imageUrl: "",
+    imageUrl: "https://stardewvalleywiki.com/mediawiki/images/6/67/Goby.png",
     name: "Goby",
+    description: "",
+    sellPrice: [[], [], []],
+    location: "",
+    time: "",
+    season: "",
+    weather: "",
+    difficulty: "",
+    usedIn: [],
+  },
+  {
+    id: 47,
+    imageUrl:
+      "https://stardewvalleywiki.com/mediawiki/images/9/97/Woodskip.png",
+    name: "Woodskip",
     description: "",
     sellPrice: [[], [], []],
     location: "",
