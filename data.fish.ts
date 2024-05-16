@@ -85,7 +85,7 @@ export const dataAllFish: TFish[] = [
     season: "All seasons",
     weather: "Any",
     difficulty: "35",
-    usedIn: [],
+    usedIn: ["Night Fishing Bundle", "Baked Fish"],
   },
   {
     id: 5,
@@ -99,7 +99,12 @@ export const dataAllFish: TFish[] = [
     season: "All seasons",
     weather: "Any",
     difficulty: "50",
-    usedIn: [],
+    usedIn: [
+      "Lake Fish Bundle",
+      "Quality Fish Bundle",
+      "Crispy Bass",
+      "'Fish Casserole' Quest",
+    ],
   },
   {
     id: 6,
@@ -127,7 +132,7 @@ export const dataAllFish: TFish[] = [
     season: "Summer",
     weather: "Sun",
     difficulty: "45",
-    usedIn: [],
+    usedIn: ["Trou Soup"],
   },
   {
     id: 8,
@@ -140,7 +145,7 @@ export const dataAllFish: TFish[] = [
     season: "Fall",
     weather: "Any",
     difficulty: "50",
-    usedIn: [],
+    usedIn: ["Salmon Dinner"],
   },
   {
     id: 9,
@@ -153,7 +158,7 @@ export const dataAllFish: TFish[] = [
     season: "Fall and Winter (with Rain Totem)",
     weather: "Rain",
     difficulty: "45",
-    usedIn: [],
+    usedIn: ["Night Fishing Bundle", "Quality Fish Bundle"],
   },
   {
     id: 10,
@@ -179,7 +184,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "15",
-    usedIn: [],
+    usedIn: ["Lake Fish Bundle", "Carp Surprise"],
   },
   {
     id: 12,
@@ -192,7 +197,7 @@ export const dataAllFish: TFish[] = [
     season: "Spring and Fall (Spring and Summer in Secret Woods Pond)",
     weather: "Rain",
     difficulty: "75",
-    usedIn: [],
+    usedIn: ["River Fish Bundle", "Willy (Loved Gift)"],
   },
   {
     id: 13,
@@ -218,7 +223,7 @@ export const dataAllFish: TFish[] = [
     season: "Spring and Summer",
     weather: "Sun and Wind",
     difficulty: "30",
-    usedIn: [],
+    usedIn: ["River Fish Bundle", "Baked Fish"],
   },
   {
     id: 15,
@@ -258,7 +263,7 @@ export const dataAllFish: TFish[] = [
     season: "Spring and Fall",
     weather: "Rain",
     difficulty: "70",
-    usedIn: [],
+    usedIn: ["Night Fishing Bundle", "Fried Eel", "Spicy Eel"],
   },
   {
     id: 18,
@@ -271,7 +276,7 @@ export const dataAllFish: TFish[] = [
     season: "Summer",
     weather: "Any",
     difficulty: "95",
-    usedIn: [],
+    usedIn: ["Master Fisher's Bundle", "Willy (Loved Gift)"],
   },
   {
     id: 19,
@@ -285,7 +290,7 @@ export const dataAllFish: TFish[] = [
     season: "Summer, Fall, and Winter (with Rain Totem)",
     weather: "Rain",
     difficulty: "40",
-    usedIn: [],
+    usedIn: ["Ocean Fish Bundle"],
   },
   {
     id: 20,
@@ -298,7 +303,7 @@ export const dataAllFish: TFish[] = [
     season: "Winter",
     weather: "Any",
     difficulty: "75",
-    usedIn: [],
+    usedIn: ["Fried Calamari", "'Catch a Squid' Quest"],
   },
   {
     id: 21,
@@ -312,7 +317,7 @@ export const dataAllFish: TFish[] = [
     season: "Fall and Winter",
     weather: "Any",
     difficulty: "40",
-    usedIn: [],
+    usedIn: ["Lucky Lunch", "Willy (Loved Gift)"],
   },
   {
     id: 22,
@@ -326,7 +331,7 @@ export const dataAllFish: TFish[] = [
     season: "Summer and Fall (All Seasons on Ginger Island)",
     weather: "Any",
     difficulty: "80",
-    usedIn: [],
+    usedIn: ["Wizard (Loved Gift)"],
   },
   {
     id: 23,
@@ -340,7 +345,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "50",
-    usedIn: [],
+    usedIn: ["Specialty Fish Bundle"],
   },
   {
     id: 24,
@@ -381,7 +386,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "90",
-    usedIn: [],
+    usedIn: ["Master Fisher's Bundle"],
   },
   {
     id: 27,
@@ -395,7 +400,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "65",
-    usedIn: [],
+    usedIn: ["Specialty Fish Bundle", "Penny (Loved Gift)"],
   },
   {
     id: 28,
@@ -409,7 +414,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "90",
-    usedIn: [],
+    usedIn: ["Master Fisher's Bundle"],
   },
   {
     id: 29,
@@ -423,7 +428,7 @@ export const dataAllFish: TFish[] = [
     season: "Spring and Summer (All Seasons on Ginger Island)",
     weather: "Any",
     difficulty: "50",
-    usedIn: [],
+    usedIn: ["Seafoam Pudding"],
   },
   {
     id: 30,
@@ -438,7 +443,7 @@ export const dataAllFish: TFish[] = [
     season: "Fall and Winter (All Seasons on Ginger Island)",
     weather: "Any",
     difficulty: "55",
-    usedIn: [],
+    usedIn: ["Seafoam Pudding"],
   },
   {
     id: 31,
@@ -453,7 +458,7 @@ export const dataAllFish: TFish[] = [
     season: "Summer and Winter",
     weather: "Any",
     difficulty: "78",
-    usedIn: [],
+    usedIn: ["Lake Fish Bundle", "Willy (Loved Gift)"],
   },
   {
     id: 32,
@@ -467,7 +472,7 @@ export const dataAllFish: TFish[] = [
     season: "Fall and Winter",
     weather: "Any",
     difficulty: "60",
-    usedIn: [],
+    usedIn: ["River Fish Bundle"],
   },
   {
     id: 33,
@@ -482,7 +487,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "46",
-    usedIn: [],
+    usedIn: ["Lake Fish Bundle"],
   },
   {
     id: 34,
@@ -495,7 +500,7 @@ export const dataAllFish: TFish[] = [
     season: "Summer and Fall (All Seasons on Ginger Island)",
     weather: "Any",
     difficulty: "50",
-    usedIn: [],
+    usedIn: ["Ocean Fish Bundle"],
   },
   {
     id: 35,
@@ -508,7 +513,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "35",
-    usedIn: [],
+    usedIn: ["Field Research Bundle"],
   },
   {
     id: 36,
@@ -535,7 +540,7 @@ export const dataAllFish: TFish[] = [
     season: "Fall and Winter",
     weather: "Any",
     difficulty: "60",
-    usedIn: [],
+    usedIn: ["'Fish Stew' Quest"],
   },
   {
     id: 38,
@@ -549,7 +554,7 @@ export const dataAllFish: TFish[] = [
     season: "Spring, Summer, and Fall",
     weather: "Rain",
     difficulty: "45",
-    usedIn: [],
+    usedIn: ["River Fish Bundle", "Quality Fish Bundle"],
   },
   {
     id: 39,
@@ -563,7 +568,7 @@ export const dataAllFish: TFish[] = [
     season: "Winter",
     weather: "Any",
     difficulty: "85",
-    usedIn: [],
+    usedIn: ["'Catch a Lingcod' Quest"],
   },
   {
     id: 40,
@@ -591,7 +596,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "80",
-    usedIn: [],
+    usedIn: ["Specialty Fish Bundle"],
   },
   {
     id: 42,
@@ -606,7 +611,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "55",
-    usedIn: [],
+    usedIn: ["The Missing Bundle"],
   },
   {
     id: 43,
@@ -678,7 +683,7 @@ export const dataAllFish: TFish[] = [
     season: "All Seasons",
     weather: "Any",
     difficulty: "50",
-    usedIn: [],
+    usedIn: ["Specialty Fish Bundle"],
   },
 ];
 
