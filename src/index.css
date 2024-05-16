@@ -210,11 +210,11 @@ background-image: url("../assets/images-removebg-preview.jpg");
 }
 
 .fishImgWrapper {
-  min-width: 10rem;
+  min-width: 7rem;
 }
 
 .fishImgWrapper img {
-  width: 10rem;
+  width: 7rem;
 }
 
 .block {
