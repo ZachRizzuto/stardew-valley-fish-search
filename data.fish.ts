@@ -84,7 +84,7 @@ export const dataAllFish: TFish[] = [
     time: "6pm – 2am",
     season: "All seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "35",
     usedIn: [],
   },
   {
@@ -98,7 +98,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "All seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
   {
@@ -112,7 +112,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "Spring and Fall",
     weather: "Any",
-    difficulty: "",
+    difficulty: "28",
     usedIn: [],
   },
   {
@@ -126,7 +126,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Summer",
     weather: "Sun",
-    difficulty: "",
+    difficulty: "45",
     usedIn: [],
   },
   {
@@ -139,7 +139,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Fall",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
   {
@@ -152,7 +152,7 @@ export const dataAllFish: TFish[] = [
     time: "12pm – 2am",
     season: "Fall and Winter (with Rain Totem)",
     weather: "Rain",
-    difficulty: "",
+    difficulty: "45",
     usedIn: [],
   },
   {
@@ -165,7 +165,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "35",
     usedIn: [],
   },
   {
@@ -178,7 +178,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "15",
     usedIn: [],
   },
   {
@@ -191,7 +191,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 12am",
     season: "Spring and Fall (Spring and Summer in Secret Woods Pond)",
     weather: "Rain",
-    difficulty: "",
+    difficulty: "75",
     usedIn: [],
   },
   {
@@ -204,7 +204,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "Summer and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "60",
     usedIn: [],
   },
   {
@@ -217,7 +217,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Spring and Summer",
     weather: "Sun and Wind",
-    difficulty: "",
+    difficulty: "30",
     usedIn: [],
   },
   {
@@ -231,7 +231,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Summer and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "55",
     usedIn: [],
   },
   {
@@ -244,7 +244,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "Spring and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "25",
     usedIn: [],
   },
   {
@@ -257,7 +257,7 @@ export const dataAllFish: TFish[] = [
     time: "4pm – 2am",
     season: "Spring and Fall",
     weather: "Rain",
-    difficulty: "",
+    difficulty: "70",
     usedIn: [],
   },
   {
@@ -270,7 +270,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 1pm",
     season: "Summer",
     weather: "Any",
-    difficulty: "",
+    difficulty: "95",
     usedIn: [],
   },
   {
@@ -284,7 +284,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Summer, Fall, and Winter (with Rain Totem)",
     weather: "Rain",
-    difficulty: "",
+    difficulty: "40",
     usedIn: [],
   },
   {
@@ -297,7 +297,7 @@ export const dataAllFish: TFish[] = [
     time: "6pm – 2am",
     season: "Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "75",
     usedIn: [],
   },
   {
@@ -311,7 +311,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Fall and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "40",
     usedIn: [],
   },
   {
@@ -325,7 +325,7 @@ export const dataAllFish: TFish[] = [
     time: "6pm – 2am",
     season: "Summer and Fall (All Seasons on Ginger Island)",
     weather: "Any",
-    difficulty: "",
+    difficulty: "80",
     usedIn: [],
   },
   {
@@ -339,7 +339,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
   {
@@ -353,7 +353,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "65",
     usedIn: [],
   },
   {
@@ -366,7 +366,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "85",
     usedIn: [],
   },
   {
@@ -380,7 +380,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "90",
     usedIn: [],
   },
   {
@@ -394,7 +394,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 8pm",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "65",
     usedIn: [],
   },
   {
@@ -408,7 +408,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 8pm",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "90",
     usedIn: [],
   },
   {
@@ -422,7 +422,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 8pm",
     season: "Spring and Summer (All Seasons on Ginger Island)",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
   {
@@ -437,7 +437,7 @@ export const dataAllFish: TFish[] = [
     time: "10pm – 2am",
     season: "Fall and Winter (All Seasons on Ginger Island)",
     weather: "Any",
-    difficulty: "",
+    difficulty: "55",
     usedIn: [],
   },
   {
@@ -452,7 +452,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Summer and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "78",
     usedIn: [],
   },
   {
@@ -466,7 +466,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Fall and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "60",
     usedIn: [],
   },
   {
@@ -481,7 +481,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "46",
     usedIn: [],
   },
   {
@@ -494,7 +494,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 2pm",
     season: "Summer and Fall (All Seasons on Ginger Island)",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
   {
@@ -507,7 +507,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "35",
     usedIn: [],
   },
   {
@@ -520,7 +520,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 7pm",
     season: "Summer",
     weather: "Any",
-    difficulty: "",
+    difficulty: "78",
     usedIn: [],
   },
   {
@@ -534,7 +534,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 11am and 6pm – 2am",
     season: "Fall and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "60",
     usedIn: [],
   },
   {
@@ -548,7 +548,7 @@ export const dataAllFish: TFish[] = [
     time: "9am – 2am",
     season: "Spring, Summer, and Fall",
     weather: "Rain",
-    difficulty: "",
+    difficulty: "45",
     usedIn: [],
   },
   {
@@ -562,7 +562,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "85",
     usedIn: [],
   },
   {
@@ -575,7 +575,7 @@ export const dataAllFish: TFish[] = [
     time: "6am – 11am and 7pm – 2am",
     season: "Spring, Summer, and Winter",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
   {
@@ -590,7 +590,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "80",
     usedIn: [],
   },
   {
@@ -605,7 +605,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "55",
     usedIn: [],
   },
   {
@@ -620,7 +620,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "80",
     usedIn: [],
   },
   {
@@ -634,7 +634,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
   {
@@ -649,7 +649,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "60",
     usedIn: [],
   },
   {
@@ -662,7 +662,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "55",
     usedIn: [],
   },
   {
@@ -677,7 +677,7 @@ export const dataAllFish: TFish[] = [
     time: "Anytime",
     season: "All Seasons",
     weather: "Any",
-    difficulty: "",
+    difficulty: "50",
     usedIn: [],
   },
 ];
