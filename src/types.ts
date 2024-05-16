@@ -8,7 +8,7 @@ export type TFish = {
   location: string;
   time: string;
   imageUrl: string;
-  sellPrice: number[][];
+  sellPrice: Array<Array<number>>;
   description: string;
   season: string;
   difficulty: string;

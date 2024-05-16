@@ -10,6 +10,7 @@ export const Fish = (Fish: Omit<TFish, "id">) => {
     season,
     difficulty,
     weather,
+    usedIn,
   } = Fish;
 
   return (
@@ -27,13 +28,76 @@ export const Fish = (Fish: Omit<TFish, "id">) => {
           <div>season: {season}</div>
           <div>difficulty: {difficulty}</div>
           <div>weather: {weather}</div>
-          <div>
-            sell price:{" "}
-            {sellPrice.flat().map((price) => (
-              <div>{price}</div>
-            ))}
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              gap: ".3rem",
+            }}
+          >
+            <div>sell price:</div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: ".2rem",
+                }}
+              >
+                <div>⭐</div>
+                {sellPrice[0].map((price) => (
+                  <div>{price}</div>
+                ))}
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: ".2rem",
+                }}
+              >
+                <div>🌟</div>
+                {sellPrice[1].map((price) => (
+                  <div>{price}</div>
+                ))}
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: ".2rem",
+                }}
+              >
+                <div>✨</div>
+                {sellPrice[2].map((price) => (
+                  <div>{price}</div>
+                ))}
+              </div>
+            </div>
           </div>
-          <div>uses: </div>
+          <div
+            style={{
+              display: "flex",
+              gap: "1rem",
+            }}
+          >
+            <div>uses: </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {usedIn.length > 0
+                ? usedIn.map((use) => <div>{use}</div>)
+                : "Nothing"}
+            </div>
+          </div>
         </div>
       </div>
     </>
