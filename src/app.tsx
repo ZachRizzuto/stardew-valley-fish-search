@@ -3,7 +3,7 @@ import { Topbar } from "./Components/Topbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFish } from "@fortawesome/free-solid-svg-icons";
 import { dataAllFish } from "../data.fish";
-import { Fish } from "./Components/Fish";
+import { FishSelect } from "./Components/FishSelect";
 import { TFish } from "./types";
 
 export const App = () => {
@@ -43,7 +43,7 @@ export const App = () => {
             ""
           )}
           {allFish.map((fish: TFish) => (
-            <Fish
+            <FishSelect
               name={fish.name}
               location={fish.location}
               imageUrl={fish.imageUrl}
