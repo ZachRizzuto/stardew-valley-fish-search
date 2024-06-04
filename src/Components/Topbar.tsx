@@ -33,6 +33,8 @@ export const Topbar = ({
           className="search-form-container"
           onSubmit={(e) => {
             e.preventDefault();
+
+            setAllFish(filteredFish.length > 0 ? filteredFish : allFish);
           }}
         >
           <button className="upload" type="submit">
@@ -50,7 +52,6 @@ export const Topbar = ({
                     fish.name.toLowerCase().includes(value)
                   )
                 );
-                setAllFish(filteredFish.length > 0 ? filteredFish : allFish);
                 if (value === "") {
                   setAllFish(dataAllFish);
                 }

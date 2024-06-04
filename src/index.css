@@ -193,20 +193,13 @@ background-image: url("../assets/images-removebg-preview.jpg");
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 80%;
   min-height: 33%;
-  min-width: 320px;
-  overflow: hidden;
   margin:auto;
   gap: 2rem;
-  font-size: 1rem;
-  border: 1px solid rgb(187, 187, 187);
-  border-radius: 20px;
+  font-size: 90%;
+  border: 1px solid blue;
   padding: 2rem 0;
-}
-
-.fishWrapper div {
-  font-size: 1.2rem;
 }
 
 .fishDetailsWrapper {
@@ -218,7 +211,7 @@ background-image: url("../assets/images-removebg-preview.jpg");
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   width: 60%;
-  min-height: 100%;
+  height: 100%;
 }
 
 .fishImgWrapper {
