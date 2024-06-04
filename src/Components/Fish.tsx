@@ -1,105 +1,30 @@
+import { useState } from "react";
 import { TFish } from "../types";
+import { FishUi } from "./FishUi";
 export const Fish = (Fish: Omit<TFish, "id">) => {
-  const {
-    name,
-    location,
-    time,
-    imageUrl,
-    sellPrice,
-    description,
-    season,
-    difficulty,
-    weather,
-    usedIn,
-  } = Fish;
+  const { name, time, imageUrl, season } = Fish;
+
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <div className={"fishWrapper"}>
+      <div className={"fishWrapper"} onClick={() => setShowModal(true)}>
         <div className={"fishImgWrapper"}>
           <img src={imageUrl} alt={`picture of ${name}`} />
         </div>
         <div className={"fishDetailsWrapper"}>
-          <div>name: {name}</div>
-          <div className={`${location ? "block" : "hidden"}`}>
-            location: {location}
-          </div>
-          <div>time: {time}</div>
-          <div>season: {season}</div>
-          <div>difficulty: {difficulty}</div>
-          <div>weather: {weather}</div>
-          <div
-            style={{
-              display: "flex",
-              width: "100%",
-              gap: ".3rem",
-            }}
-          >
-            <div>sell price:</div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: ".2rem",
-                }}
-              >
-                <div>⭐</div>
-                {sellPrice[0].map((price) => (
-                  <div>{price}</div>
-                ))}
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: ".2rem",
-                }}
-              >
-                <div>🌟</div>
-                {sellPrice[1].map((price) => (
-                  <div>{price}</div>
-                ))}
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: ".2rem",
-                }}
-              >
-                <div>✨</div>
-                {sellPrice[2].map((price) => (
-                  <div>{price}</div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              gap: "1rem",
-            }}
-          >
-            <div>uses: </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              {usedIn.length > 0
-                ? usedIn.map((use) => <div>{use}</div>)
-                : "Nothing"}
-            </div>
-          </div>
+          <h2>{name}</h2>
+          <div>{time}</div>
+          <div>{season}</div>
         </div>
       </div>
+      {showModal && (
+        <FishUi
+          Fish={Fish}
+          showModal={showModal}
+          setShowModal={(show: boolean) => setShowModal(show)}
+        />
+      )}
     </>
   );
 };
