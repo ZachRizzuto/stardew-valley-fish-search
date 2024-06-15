@@ -20,6 +20,54 @@ export const Topbar = ({
   allFish: TFish[];
   setAllFish: (fish: TFish[]) => void;
 }) => {
+  // Sample pre-defined list of fish species
+  const fishSpecies = ["Salmon", "Trout", "Bass", "Tuna", "Cod", "Catfish"];
+
+  // Function to calculate Levenshtein distance between two strings
+  function levenshteinDistance(s1: string, s2: string) {
+    const m = s1.length,
+      n = s2.length;
+    const dp = Array.from(Array(m + 1), () => Array(n + 1).fill(0));
+
+    for (let i = 0; i <= m; i++) {
+      dp[i][0] = i;
+    }
+
+    for (let j = 0; j <= n; j++) {
+      dp[0][j] = j;
+    }
+
+    for (let i = 1; i <= m; i++) {
+      for (let j = 1; j <= n; j++) {
+        if (s1[i - 1] === s2[j - 1]) {
+          dp[i][j] = dp[i - 1][j - 1];
+        } else {
+          dp[i][j] = 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+        }
+      }
+    }
+
+    return dp[m][n];
+  }
+
+  // Function to perform basic typo correction using Levenshtein distance
+  function correctTypo(query: string) {
+    const closestMatch = allFish
+      .map((fish) => fish.name)
+      .reduce(
+        (closest, fish) => {
+          const distance = levenshteinDistance(
+            fish.toLowerCase(),
+            query.toLowerCase()
+          );
+          return distance < closest.distance ? { fish, distance } : closest;
+        },
+        { fish: null, distance: Infinity }
+      );
+
+    return closestMatch.fish;
+  }
+
   const [filteredFish, setFilteredFish] = useState<TFish[]>([]);
   return (
     <>
@@ -33,7 +81,6 @@ export const Topbar = ({
           className="search-form-container"
           onSubmit={(e) => {
             e.preventDefault();
-
             setAllFish(filteredFish.length > 0 ? filteredFish : allFish);
           }}
         >
@@ -55,6 +102,7 @@ export const Topbar = ({
                 if (value === "") {
                   setAllFish(dataAllFish);
                 }
+                console.log(correctTypo(e.target.value));
               }}
             />
           </div>
