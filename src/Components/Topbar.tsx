@@ -51,21 +51,37 @@ export const Topbar = ({
   }
 
   // Function to perform basic typo correction using Levenshtein distance
-  function correctTypo(query: string) {
-    const closestMatch = allFish
-      .map((fish) => fish.name)
-      .reduce(
-        (closest, fish) => {
-          const distance = levenshteinDistance(
-            fish.toLowerCase(),
-            query.toLowerCase()
-          );
-          return distance < closest.distance ? { fish, distance } : closest;
-        },
-        { fish: null, distance: Infinity }
-      );
+  function getTopSevenCalculatedFish(query: string) {
+    // const closestMatch = allFish
+    //   .map((fish) => fish.name)
+    //   .reduce(
+    //     (closest, fish) => {
+    //       const distance = levenshteinDistance(
+    //         fish.toLowerCase(),
+    //         query.toLowerCase()
+    //       );
+    //       return distance < closest.distance ? { fish, distance } : closest;
+    //     },
+    //     { fish: null, distance: Infinity }
+    //   );
 
-    return closestMatch.fish;
+    // use levenshtein distance to get fish then pair value with names
+    const calculatedFish = allFish
+      .map((fish) => fish.name)
+      .map((fish) => {
+        const distance = levenshteinDistance(
+          fish.toLowerCase(),
+          query.toLowerCase()
+        );
+
+        return { fish: fish, distance: distance };
+      });
+
+    const sortedFish = calculatedFish
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, 7);
+
+    return sortedFish;
   }
 
   const [filteredFish, setFilteredFish] = useState<TFish[]>([]);
@@ -102,7 +118,7 @@ export const Topbar = ({
                 if (value === "") {
                   setAllFish(dataAllFish);
                 }
-                console.log(correctTypo(e.target.value));
+                console.log(getTopSevenCalculatedFish(e.target.value));
               }}
             />
           </div>
