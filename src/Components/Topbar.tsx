@@ -5,7 +5,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { TFish } from "../types";
 import { dataAllFish } from "../../data.fish";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { SearchBarSuggestionBox } from "./SearchBarSuggestionBox";
 
 export const Topbar = ({
   isExtended,
@@ -20,13 +21,37 @@ export const Topbar = ({
   allFish: TFish[];
   setAllFish: (fish: TFish[]) => void;
 }) => {
-  // Sample pre-defined list of fish species
-  const fishSpecies = ["Salmon", "Trout", "Bass", "Tuna", "Cod", "Catfish"];
+  const [showSuggestionBox, setShowSuggestionBox] = useState(false);
+  const [fishSuggestions, setFishSuggestions] = useState<
+    { fish: string; distance: number }[]
+  >([]);
 
-  // Function to calculate Levenshtein distance between two strings
+  const [fishQuery, setFishQuery] = useState("");
+
+  useEffect(() => {
+    // Filter fish to search once value entered
+    setFilteredFish(
+      dataAllFish.filter((fish) =>
+        fish.name.toLowerCase().includes(fishQuery.toLowerCase())
+      )
+    );
+    // If no value in search revert to all fish
+    if (fishQuery === "") {
+      setAllFish(dataAllFish);
+    }
+    // get suggested and Show suggested Fish
+    getCalculatedFish(fishQuery);
+    setShowSuggestionBox(true);
+  }, [fishQuery]);
+
+  // Levenshtein distance
   function levenshteinDistance(s1: string, s2: string) {
     const m = s1.length,
       n = s2.length;
+
+    if (s2 === "") {
+      return 0;
+    }
     const dp = Array.from(Array(m + 1), () => Array(n + 1).fill(0));
 
     for (let i = 0; i <= m; i++) {
@@ -51,21 +76,11 @@ export const Topbar = ({
   }
 
   // Function to perform basic typo correction using Levenshtein distance
-  function getTopSevenCalculatedFish(query: string) {
-    // const closestMatch = allFish
-    //   .map((fish) => fish.name)
-    //   .reduce(
-    //     (closest, fish) => {
-    //       const distance = levenshteinDistance(
-    //         fish.toLowerCase(),
-    //         query.toLowerCase()
-    //       );
-    //       return distance < closest.distance ? { fish, distance } : closest;
-    //     },
-    //     { fish: null, distance: Infinity }
-    //   );
-
-    // use levenshtein distance to get fish then pair value with names
+  function getCalculatedFish(query: string) {
+    if (query === "") {
+      setFishSuggestions([]);
+    }
+    const fishNames = dataAllFish.map((fish) => fish.name);
     const calculatedFish = allFish
       .map((fish) => fish.name)
       .map((fish) => {
@@ -77,11 +92,21 @@ export const Topbar = ({
         return { fish: fish, distance: distance };
       });
 
-    const sortedFish = calculatedFish
-      .sort((a, b) => a.distance - b.distance)
-      .slice(0, 7);
+    const sortedFish = calculatedFish.sort((a, b) => a.distance - b.distance);
 
-    return sortedFish;
+    if (
+      fishNames.filter((fish) =>
+        fish.toLowerCase().includes(query.toLowerCase())
+      ).length > 0
+    ) {
+      setFishSuggestions(
+        sortedFish.filter((suggestion) =>
+          suggestion.fish.toLowerCase().includes(query.toLowerCase())
+        )
+      );
+    } else {
+      setFishSuggestions(sortedFish);
+    }
   }
 
   const [filteredFish, setFilteredFish] = useState<TFish[]>([]);
@@ -106,20 +131,18 @@ export const Topbar = ({
           <div className="search-box-container">
             <input
               type="text"
+              value={fishQuery}
               className="search-box"
               placeholder="Search For A Fish"
               onChange={(e) => {
-                const value = e.target.value.toLowerCase();
-                setFilteredFish(
-                  dataAllFish.filter((fish) =>
-                    fish.name.toLowerCase().includes(value)
-                  )
-                );
-                if (value === "") {
-                  setAllFish(dataAllFish);
-                }
-                console.log(getTopSevenCalculatedFish(e.target.value));
+                setFishQuery(e.target.value);
               }}
+              // If not focused get rid of suggestion box
+              onBlur={() => setShowSuggestionBox(false)}
+            />
+            <SearchBarSuggestionBox
+              showBar={showSuggestionBox}
+              fishSuggestions={fishSuggestions}
             />
           </div>
         </form>
