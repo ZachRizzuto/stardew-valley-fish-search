@@ -27,6 +27,7 @@ export const Topbar = ({
   >([]);
 
   const [fishQuery, setFishQuery] = useState("");
+  const [filteredFish, setFilteredFish] = useState<TFish[]>([]);
 
   useEffect(() => {
     // Filter fish to search once value entered
@@ -35,13 +36,17 @@ export const Topbar = ({
         fish.name.toLowerCase().includes(fishQuery.toLowerCase())
       )
     );
+    // TODO: Fish suggestions don't suggest new fish when query is unintelligable && Clicking off search doesn't update query && Change suggestions to list for better accessibility
+    setAllFish(filteredFish);
     // If no value in search revert to all fish
     if (fishQuery === "") {
       setAllFish(dataAllFish);
     }
     // get suggested and Show suggested Fish
     getCalculatedFish(fishQuery);
-    setShowSuggestionBox(true);
+    if (fishSuggestions.length > 0) {
+      setShowSuggestionBox(true);
+    }
   }, [fishQuery]);
 
   // Levenshtein distance
@@ -109,7 +114,6 @@ export const Topbar = ({
     }
   }
 
-  const [filteredFish, setFilteredFish] = useState<TFish[]>([]);
   return (
     <>
       <div className={`topbar ${isExtended && "topbar-down"}`}>
@@ -138,11 +142,12 @@ export const Topbar = ({
                 setFishQuery(e.target.value);
               }}
               // If not focused get rid of suggestion box
-              onBlur={() => setShowSuggestionBox(false)}
+              // onBlur={() => setShowSuggestionBox(false)}
             />
             <SearchBarSuggestionBox
               showBar={showSuggestionBox}
               fishSuggestions={fishSuggestions}
+              setFishQuery={(query: string) => setFishQuery(query)}
             />
           </div>
         </form>
