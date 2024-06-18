@@ -10,9 +10,9 @@ export const SearchBarSuggestionBox = ({
   return (
     <>
       {showBar && (
-        <div className="suggestions-box">
+        <ul className="suggestions-box">
           {fishSuggestions.slice(0, 6).map((suggestion) => (
-            <div
+            <li
               className="suggestion"
               onClick={() => {
                 setFishQuery(suggestion.fish);
@@ -20,9 +20,9 @@ export const SearchBarSuggestionBox = ({
               key={suggestion.fish}
             >
               {suggestion.fish}
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       )}
     </>
   );

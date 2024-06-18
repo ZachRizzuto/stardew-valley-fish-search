@@ -7,7 +7,7 @@ import { Fish } from "./Components/Fish";
 import { TFish } from "./types";
 
 export const App = () => {
-  const [allFish, setAllFish] = useState<TFish[]>([]);
+  const [allFish, setAllFish] = useState<TFish[]>(dataAllFish);
   const [topbarExtended, setTopbarExtended] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
@@ -18,8 +18,8 @@ export const App = () => {
     //     fish ? setAllFish(fish) : setAllFish(sampleFish);
     //   })
     //   .then(() => setIsLoading(false));
-    setAllFish(dataAllFish);
-  }, []);
+    setAllFish(allFish);
+  }, [allFish]);
 
   return (
     <>

@@ -30,14 +30,19 @@ export const Topbar = ({
   const [filteredFish, setFilteredFish] = useState<TFish[]>([]);
 
   useEffect(() => {
-    // Filter fish to search once value entered
+    // useEffect to get most recent state change in filteredFish after query is changed
+    setAllFish(filteredFish);
+  }, [filteredFish]);
+
+  useEffect(() => {
     setFilteredFish(
       dataAllFish.filter((fish) =>
         fish.name.toLowerCase().includes(fishQuery.toLowerCase())
       )
     );
+
     // TODO: Fish suggestions don't suggest new fish when query is unintelligable && Clicking off search doesn't update query && Change suggestions to list for better accessibility
-    setAllFish(filteredFish);
+
     // If no value in search revert to all fish
     if (fishQuery === "") {
       setAllFish(dataAllFish);
