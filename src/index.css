@@ -181,7 +181,7 @@ background-image: url("../assets/images-removebg-preview.jpg");
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: -1;
   opacity: .5;
   background-image: url("../assets/SFSbackground.png");
   background-position: center;
@@ -195,7 +195,6 @@ background-image: url("../assets/images-removebg-preview.jpg");
   align-items: center;
   width: 100%;
   height: 100%;
-  z-index: 1;
   border-radius: 20px;
   border: 1px solid rgba(0,0,0,.2);
   padding: 2rem 0 2rem 0;
@@ -300,7 +299,7 @@ background-image: url("../assets/images-removebg-preview.jpg");
 }
 
 .fish-ui-wrapper {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -311,6 +310,7 @@ background-image: url("../assets/images-removebg-preview.jpg");
   flex-direction: column;
   justify-content: center;
   font-size: 1.2rem;
+  z-index: 11;
 }
 
 .fish-ui {
