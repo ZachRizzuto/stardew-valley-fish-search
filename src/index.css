@@ -115,6 +115,8 @@ body {
 
 .suggestion {
   width: 100%;
+  pointer-events: all;
+  cursor: default;
 }
 
 .suggestion:hover {
@@ -278,7 +280,8 @@ background-image: url("../assets/images-removebg-preview.jpg");
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-display {

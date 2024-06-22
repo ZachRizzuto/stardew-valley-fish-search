@@ -41,7 +41,7 @@ export const Topbar = ({
       )
     );
 
-    // TODO: Fish suggestions don't suggest new fish when query is unintelligable && Clicking off search doesn't update query && Change suggestions to list for better accessibility
+    // TODO: Fish suggestions don't suggest new fish when query is unintelligable && Clicking off search doesn't update query
 
     // If no value in search revert to all fish
     if (fishQuery === "") {
@@ -54,7 +54,7 @@ export const Topbar = ({
     }
   }, [fishQuery]);
 
-  // Levenshtein distance
+  // Levenshtein distance calc
   function levenshteinDistance(s1: string, s2: string) {
     const m = s1.length,
       n = s2.length;
@@ -147,7 +147,8 @@ export const Topbar = ({
                 setFishQuery(e.target.value);
               }}
               // If not focused get rid of suggestion box
-              // onBlur={() => setShowSuggestionBox(false)}
+              // TODO: do this a better way
+              onBlur={() => setTimeout(() => setShowSuggestionBox(false), 60)}
             />
             <SearchBarSuggestionBox
               showBar={showSuggestionBox}

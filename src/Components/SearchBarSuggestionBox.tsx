@@ -9,8 +9,8 @@ export const SearchBarSuggestionBox = ({
 }) => {
   return (
     <>
-      {showBar && (
-        <ul className="suggestions-box">
+      {
+        <ul className={`suggestions-box ${showBar ? "" : "hidden"}`}>
           {fishSuggestions.slice(0, 6).map((suggestion) => (
             <li
               className="suggestion"
@@ -23,7 +23,7 @@ export const SearchBarSuggestionBox = ({
             </li>
           ))}
         </ul>
-      )}
+      }
     </>
   );
 };
