@@ -148,7 +148,7 @@ export const Topbar = ({
               }}
               // If not focused get rid of suggestion box
               // TODO: do this a better way
-              onBlur={() => setTimeout(() => setShowSuggestionBox(false), 60)}
+              onBlur={() => setTimeout(() => setShowSuggestionBox(false), 100)}
             />
             <SearchBarSuggestionBox
               showBar={showSuggestionBox}
