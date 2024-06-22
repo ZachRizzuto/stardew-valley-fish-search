@@ -115,7 +115,6 @@ body {
 
 .suggestion {
   width: 100%;
-  pointer-events: all;
   cursor: default;
 }
 
@@ -358,6 +357,9 @@ hr {
   width: 10rem;
 }
 
+.pointer-events-all {
+  pointer-events: all;
+}
 
 @keyframes loading {
   from {
