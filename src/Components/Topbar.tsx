@@ -154,6 +154,7 @@ export const Topbar = ({
               showBar={showSuggestionBox}
               fishSuggestions={fishSuggestions}
               setFishQuery={(query: string) => setFishQuery(query)}
+              fishQuery={fishQuery}
             />
           </div>
         </form>
